@@ -70,7 +70,7 @@ int main(int argc, char *argv[]){
 
   // Content of makefile_file.
   char makefile_containing[380] =
-    "CC = gcc\nCFLAGS = -std=c99 -W -Wall\n"
+    "CC = gcc\nCFLAGS = -std=c11 -W -Wall\n"
     "SRC_DIR = src\n"
     "SOURCE = $(wildcard $(SRC_DIR)/*.c)\n"
     "OBJECTS = $(patsubst %, $(SRC_DIR)/%, $(notdir $(SOURCE:.c=.o)))\n"
